@@ -1,0 +1,26 @@
+# 🧠 Quiz Genius - Projet Web
+
+github
+Un site web interactif de quiz culturel avec différents niveaux de difficulté, réalisé dans le cadre d'un projet académique.
+
+## 🌐 Live Demo
+[Lien vers la version en ligne](https://[ton-username].github.io/quiz-genius/)
+
+## 📋 Fonctionnalités
+- ✅ 3 niveaux de difficulté (Facile, Moyen, Difficile)
+- ✅ 10 questions par niveau (30 questions au total)
+- ✅ Interface utilisateur responsive et moderne
+- ✅ Timer pour suivre le temps de réponse
+- ✅ Calcul automatique du score
+- ✅ Feedback visuel immédiat
+- ✅ Sauvegarde automatique de la progression
+- ✅ Design avec thème clair/sombre
+
+## 🛠 Technologies utilisées
+- **HTML5** - Structure sémantique
+- **CSS3** - Styles et animations
+- **JavaScript (ES6+)** - Interactivité
+- **Font Awesome** - Icônes
+- **GitHub Pages** - Hébergement
+
+## 📁 Structure du projet
