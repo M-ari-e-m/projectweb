@@ -1,1 +1,247 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Header & Nav */
+header {
+  background: #432c50;
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+  color: #3498db;
+}
+
+/* Hero (Accueil) */
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #502c4c, #8e44ad22);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.photo-profil {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  margin-bottom: 2rem;
+}
+
+/* Sections Générales (h1, intro, note) */
+h1 {
+  font-size: 3.2rem;
+  margin-bottom: 1.2rem;
+  color: #2c3e50;
+}
+
+.intro, .note, .note-langues {
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 2rem;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Cartes & Blocs (communs à compétences, engagements, passions, etc.) */
+.categorie, .engagement-block, .passion-card, .matiere-list li, .projet-card {
+  background: white;
+  padding: 1.8rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.categorie:hover, .engagement-block:hover, .passion-card:hover, .matiere-list li:hover, .projet-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.categorie h2, .engagement-block h3, .passion-card h2, .projet-description h2 {
+  font-size: 1.8rem;
+  color: #3498db;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Grilles (skills, passions, matieres, projets) */
+.skills-grid, .passions-grid, .matiere-list ul, .projets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Photos & Figures (communes) */
+.project-photo, .etape-image, .campus-photo, .experience-image, .projet-photo {
+  text-align: center;
+  margin: 1.5rem auto;
+}
+
+.project-photo img, .etape-image img, .campus-photo img, .experience-image img, .projet-photo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+figcaption {
+  margin-top: 0.8rem;
+  font-style: italic;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Sections Spécifiques (parcours, experiences, projets) */
+.section-parcours, .section-competences, .section-experiences, .projets-container, .matieres-container, .passions-container {
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.etape, .experience, .projet-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.etape-content, .experience-content, .projet-description {
+  flex: 1 1 400px;
+}
+
+.etape-image, .experience-image, .projet-photo {
+  flex: 0 0 400px;
+}
+
+/* Formulaire Contact */
+.for-sec {
+  background: white;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px -8px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #1e3a5f;
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-actions button {
+  background-color: #3b6bb8;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form-actions button:hover {
+  background-color: #1e3a5f;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #2c3e50;
+  color: white;
+  margin-top: 4rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero, .etape, .experience, .projet-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skills-grid, .passions-grid, .projets-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .photo-profil {
+    width: 140px;
+    height: 140px;
+  }
+
+  .project-photo img, .etape-image img, .campus-photo img, .experience-image img, .projet-photo img {
+    max-width: 100%;
+  }
+}
